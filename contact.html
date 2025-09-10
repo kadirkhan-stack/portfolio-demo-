@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Personal portfolio showcasing profile, skills, projects, and contact information." />
+  <title>Contact — Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="font-nunito bg-slate-50 text-slate-800">
+  <header class="bg-white/70 backdrop-blur border-b sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+      <a href="index.html" class="inline-flex items-center gap-3">
+        <span class="inline-block w-10 h-10 rounded-2xl bg-gradient-to-br from-rose-400 to-amber-300 animate-pop"></span>
+        <span class="text-xl font-extrabold tracking-tight">Your Name</span>
+      </a>
+      <nav aria-label="Primary" class="">
+        <ul class="flex gap-4 md:gap-6">
+          <li><a class="nav-link" href="index.html">Home</a></li>
+          <li><a class="nav-link" href="projects.html">Projects</a></li>
+          <li><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main id="content" class="max-w-6xl mx-auto px-4 py-8">
+
+<section class="grid lg:grid-cols-2 gap-10">
+  <article class="card">
+    <h1 class="card-title text-3xl">Contact Me</h1>
+    <p class="text-slate-600 mb-6">Have a project in mind or a question? Send a message.</p>
+
+    <form class="space-y-5" action="#" method="post">
+      <div>
+        <label for="name" class="label">Full Name</label>
+        <input id="name" name="name" type="text" required minlength="2" class="input" placeholder="Ada Lovelace" />
+      </div>
+
+      <div>
+        <label for="email" class="label">Email</label>
+        <input id="email" name="email" type="email" required class="input" placeholder="you@example.com" />
+      </div>
+
+      <div>
+        <label for="message" class="label">Message</label>
+        <textarea id="message" name="message" required minlength="10" class="input h-32 resize-y" placeholder="Tell me a bit about your project..."></textarea>
+      </div>
+
+      <fieldset class="space-y-3">
+        <legend class="label">Contact Preference</legend>
+        <div class="flex items-center gap-3">
+          <input type="radio" id="pref-email" name="pref" value="email" class="radio" checked />
+          <label for="pref-email">Email</label>
+        </div>
+        <div class="flex items-center gap-3">
+          <input type="radio" id="pref-call" name="pref" value="call" class="radio" />
+          <label for="pref-call">Phone Call</label>
+        </div>
+      </fieldset>
+
+      <div class="flex gap-3">
+        <button type="submit" class="btn">Submit</button>
+        <button type="reset" class="btn btn-secondary">Reset</button>
+      </div>
+    </form>
+  </article>
+
+  <aside class="card">
+    <h2 class="card-title">Find Me</h2>
+    <ul class="list-disc list-inside text-slate-600">
+      <li>📍 Bhopal, India</li>
+      <li>💼 <a class="link" href="https://www.linkedin.com/in/kadir-khan-294ab6355?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noreferrer">LinkedIn</a></li>
+      <li>💻 <a class="link" href="https://github.com/kadirkhan-stack" target="_blank" rel="noreferrer">GitHub</a></li>
+    </ul>
+
+    <div class="mt-6">
+      <iframe class="w-full h-56 rounded-2xl border" src="https://www.google.com/maps/embed/v1/place?q=Bhopal&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8" title="Map"></iframe>
+    </div>
+  </aside>
+</section>
+
+  </main>
+  <footer class="mt-16 border-t bg-white">
+    <div class="max-w-6xl mx-auto px-4 py-8 grid md:grid-cols-2 gap-6">
+      <section aria-labelledby="about-mini">
+        <h2 id="about-mini" class="text-lg font-semibold mb-2">About this site</h2>
+        <p class="text-sm leading-relaxed">Built with semantic HTML, Tailwind CSS utilities, and a sprinkle of custom CSS. Responsive by design.</p>
+      </section>
+      <aside aria-labelledby="quick-links">
+        <h2 id="quick-links" class="text-lg font-semibold mb-2">Quick Links</h2>
+        <ul class="list-disc list-inside text-sm">
+          <li><a class="text-blue-700 underline hover:no-underline focus-visible:outline-none focus-visible:ring" href="projects.html">Projects</a></li>
+          <li><a class="text-blue-700 underline hover:no-underline focus-visible:outline-none focus-visible:ring" href="contact.html">Contact</a></li>
+          <li><a class="text-blue-700 underline hover:no-underline focus-visible:outline-none focus-visible:ring" href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a></li>
+        </ul>
+      </aside>
+    </div>
+    <div class="text-center text-xs text-slate-500 py-4">© 2025 Your Name</div>
+  </footer>
+  <script>
+    // Small enhancement: mobile focus helper
+    document.querySelectorAll('a, button, input, textarea').forEach(el => {
+      el.addEventListener('focus', () => el.classList.add('focus-visible'));
+      el.addEventListener('blur', () => el.classList.remove('focus-visible'));
+    });
+  </script>
+</body>
+</html>

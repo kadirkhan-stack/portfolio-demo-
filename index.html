@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Personal portfolio showcasing profile, skills, projects, and contact information." />
+  <title>Home — Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="font-nunito bg-slate-50 text-slate-800">
+  <header class="bg-white/70 backdrop-blur border-b sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+      <a href="index.html" class="inline-flex items-center gap-3">
+        <span class="inline-block w-10 h-10 rounded-2xl bg-gradient-to-br from-rose-400 to-amber-300 animate-pop"></span>
+        <span class="text-xl font-extrabold tracking-tight">Abdul Kadir khan</span>
+      </a>
+      <nav aria-label="Primary" class="">
+        <ul class="flex gap-4 md:gap-6">
+          <li><a class="nav-link" href="index.html">Home</a></li>
+          <li><a class="nav-link" href="projects.html">Projects</a></li>
+          <li><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main id="content" class="max-w-6xl mx-auto px-4 py-8">
+
+<section class="grid lg:grid-cols-[1.1fr,0.9fr] gap-10 items-start">
+  <article class="space-y-6">
+    <header>
+      <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight">Hi, I'm  <span class="text-transparent bg-clip-text bg-gradient-to-r from-rose-500 to-amber-400">Abdul Kadir Khan</span>.</h1>
+      <p class="mt-3 text-lg text-slate-600">Frontend developer & UI tinkerer who loves clean code and delightful interactions.</p>
+    </header>
+    <section aria-labelledby="skills" class="card">
+      <h2 id="skills" class="card-title">Skills (Ordered List)</h2>
+      <ol class="list-decimal list-inside space-y-1">
+        <li>Semantic HTML & Accessibility</li>
+        <li>CSS/Tailwind CSS & Responsive Design</li>
+        <li>JavaScript & UI Components</li>
+        <li>REST APIs Integration</li>
+        <li>Version Control (Git)</li>
+      </ol>
+    </section>
+
+    <section>
+      
+      <h2 class="ttl">Education</h2>
+      <p class="edu">Hi my name is abdul kadir and i am currenty in 2nd year in my undergraduation iam doing my B.tech as an computer science major , From jagran lakecity university bhopal , I completed my middle and High Schooling from my Home town from st.paul HR sec school</p>
+    </section>
+    <section aria-labelledby="tools" class="card">
+      <h2 id="tools" class="card-title">Tools I Use (Unordered List)</h2>
+      <ul class="list-disc list-inside space-y-1">
+        <li>VS Code</li>
+        <li>Figma</li>
+        <li>GitHub</li>
+        <li>Chrome DevTools</li>
+      </ul>
+    </section>
+    <section aria-labelledby="media-embed" class="card">
+      <h2 id="media-embed" class="card-title">Media Embeds</h2>
+      <div class="grid md:grid-cols-3 gap-4">
+        <figure class="space-y-2">
+          <img class="rounded-2xl shadow" src="pot foil img.jpg" alt="Profile photo placeholder" />
+          <figcaption class="text-sm text-slate-500">Profile Image</figcaption>
+        
+      </div>
+    </section>
+  </article>
+  <aside class="card sticky top-28">
+    <h2 class="card-title">Quick Bio</h2>
+    <p class="text-slate-600">I build responsive, accessible interfaces with a strong focus on typography, spacing, and micro-interactions ,And iam inovative person with lots of ideas and goal oriented <H1 id="hob" >Hobbies</H1> My Hobbies are playing football,Reading and Sometime i play videogames.</p>
+    <a href="projects.html" class="btn mt-4">View Projects</a>
+  </aside>
+</section>
+
+  </main>
+  <footer class="mt-16 border-t bg-white">
+    <div class="max-w-6xl mx-auto px-4 py-8 grid md:grid-cols-2 gap-6">
+      <section aria-labelledby="about-mini">
+        <h2 id="about-mini" class="text-lg font-semibold mb-2">About this site</h2>
+        <p class="text-sm leading-relaxed">Built with semantic HTML, Tailwind CSS utilities, and a sprinkle of custom CSS. Responsive by design.</p>
+      </section>
+      <aside aria-labelledby="quick-links">
+        <h2 id="quick-links" class="text-lg font-semibold mb-2">Quick Links</h2>
+        <ul class="list-disc list-inside text-sm">
+          <li><a class="text-blue-700 underline hover:no-underline focus-visible:outline-none focus-visible:ring" href="projects.html">Projects</a></li>
+          <li><a class="text-blue-700 underline hover:no-underline focus-visible:outline-none focus-visible:ring" href="contact.html">Contact</a></li>
+          <li><a class="text-blue-700 underline hover:no-underline focus-visible:outline-none focus-visible:ring" href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a></li>
+        </ul>
+      </aside>
+    </div>
+    <div class="text-center text-xs text-slate-500 py-4">© 2025 Your Name</div>
+  </footer>
+  <script>
+    // Small enhancement: mobile focus helper
+    document.querySelectorAll('a, button, input, textarea').forEach(el => {
+      el.addEventListener('focus', () => el.classList.add('focus-visible'));
+      el.addEventListener('blur', () => el.classList.remove('focus-visible'));
+    });
+  </script>
+</body>
+</html>
